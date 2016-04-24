@@ -12,5 +12,6 @@ It is early WIP, it's basically unusable. I'm begginer and I'm trying to figure 
 
 ```
 chmod 777 copyscript.py
+chmod 777 b64_to_image.py
 ./copyscript.py
 ```
