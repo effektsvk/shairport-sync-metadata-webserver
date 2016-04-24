@@ -8,10 +8,15 @@ It is early WIP, it's basically unusable. I'm begginer and I'm trying to figure 
 
 ---
 
-# Running the script
+# Current state
+The only thing that works is album art metadata.
+
+---
+
+## Running the script
 
 ```
-chmod 777 copyscript.py
-chmod 777 b64_to_image.py
+chmod +x copyscript.py
+chmod +x b64_to_image.py
 ./copyscript.py
 ```
