@@ -10,4 +10,7 @@ while True:
         else:
                 copyfile('/tmp/shairport-sync/image', '/root/metadata_webserver/shairport-sync-metadata-webserver/image')
                 print("Copying from tmp to webserver...")
+                time.sleep( 2 )
+                print("Converting base64 to image...")
+                os.system("b64_to_image.py image")
                 continue
