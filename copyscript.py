@@ -15,7 +15,7 @@ while True:
                                 print("Copying from tmp to webserver...")
                                 time.sleep( 2 )
                                 print("Converting base64 to image...")
-                                os.system("b64_to_image.py image")
+                                os.system("./b64_to_image.py image")
                                 continue
         else:
                 continue
