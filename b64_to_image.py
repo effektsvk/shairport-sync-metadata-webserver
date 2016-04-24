@@ -1,3 +1,4 @@
+#!/usr/bin/python
 __author__ = 'JHealy'
 from sys import argv, exit
 import os
