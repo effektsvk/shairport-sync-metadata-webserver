@@ -1,0 +1,1 @@
+This is how the site is supposed to look. I will use foggy by nbartlomiej for blurring.
