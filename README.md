@@ -5,3 +5,12 @@ HTML page showing metadata from shairport-sync using forked shairport-sync-metad
 
 This is (supposed to be) HTML page showing metadata from shairport-sync metadata which is then outputted as a separate file, that is possible thanks to awesome @birdslikewires.
 It is early WIP, it's basically unusable. I'm begginer and I'm trying to figure out things. I've only put this here for better copying between my NAS (where shairport is installed and used) and my PC.
+
+---
+
+# Running the script
+
+```
+chmod 777 copyscript.py
+./copyscript.py
+```
