@@ -4,6 +4,7 @@ import time
 from shutil import copyfile
 while True:
         if os.path.exists("/tmp/shairport-sync/image") == True:
+                copyfile('/tmp/shairport-sync/image', '/root/shairport-sync-metadata-webserver/image')
                 while True:
                         if (os.path.getsize("/tmp/shairport-sync/image") == os.path.getsize("/root/shairport-sync-metadata-webserver/image")) == True:
                                 time.sleep( 5 )
