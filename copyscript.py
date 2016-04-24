@@ -16,6 +16,8 @@ while True:
                                 time.sleep( 2 )
                                 print("Converting base64 to image...")
                                 os.system("./b64_to_image.py image")
-                                continue
+                                break
         else:
+                print("Music is not playing.")
+                time.sleep( 10 )
                 continue
