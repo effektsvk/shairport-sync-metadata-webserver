@@ -19,7 +19,6 @@
   min-height: 50%;
 }
 
-#coverimage {
-  max-width: 200px;
-  max-height: 200px;
-}
+#content {
+  max-width: 400px;
+  }
