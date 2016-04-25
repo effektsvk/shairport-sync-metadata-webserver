@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Page</title>
+	<meta charset="utf-8">
 	<meta http-equiv="refresh" content = "3">
 	<meta http-equiv="Page-Enter" content="blendTrans(Duration=1.0)">
 	<meta http-equiv="Page-Exit" content="blendTrans(Duration=1.0)">
@@ -14,8 +15,16 @@
 			$('#bg').foggy();
 		});
 	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#artist").load("artist");
+            });
+	</script>
 </head>
 <body>
-<img id="content" src="image_converted.jpeg"/>
+<p id="artist">No Artist</p>
+<p id="album">No Album</p>
+<p id="track">No Track</p>
+<img id="albumart" src="image_converted.jpeg"/>
 </body>
 </html>
