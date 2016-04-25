@@ -1,8 +1,9 @@
 #albumart {
   max-width: 400px;
   max-height: 400px;
-  padding-right: 20%;
-
+  width: auto;
+  height: auto;
+  padding-right: 15%;
 }
 
 html {
