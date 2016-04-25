@@ -28,5 +28,8 @@ while True:
                                 break
         else:
                 print("Music is not playing.")
+                os.system("rm album")
+                os.system("rm artist")
+                os.system("rm title")
                 time.sleep(5)
                 continue
