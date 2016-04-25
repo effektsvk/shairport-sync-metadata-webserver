@@ -13,9 +13,10 @@ while True:
                                 x = x + 1
                                 while x == 10:
                                         os.system("./b64_to_image.py image")
-                                        copyfile('/tmp/shairport-sync/artist', '/root/shairport-sync-metadata-webserver/artist')
-                                        copyfile('/tmp/shairport-sync/album', '/root/shairport-sync-metadata-webserver/album')
-                                        copyfile('/tmp/shairport-sync/title', '/root/shairport-sync-metadata-webserver/title')
+                                        if os.path.exists("/tmp/shairport-sync/artist") == True:
+                                                copyfile('/tmp/shairport-sync/artist', '/root/shairport-sync-metadata-webserver/artist')
+                                                copyfile('/tmp/shairport-sync/album', '/root/shairport-sync-metadata-webserver/album')
+                                                copyfile('/tmp/shairport-sync/title', '/root/shairport-sync-metadata-webserver/title')
                                         x = 1
                                 break
                         else:
@@ -25,9 +26,10 @@ while True:
                                 print("Converting base64 to image...")
                                 os.system("./b64_to_image.py image")
                                 print("Copying metadata from tmp to webserver...")
-                                copyfile('/tmp/shairport-sync/artist', '/root/shairport-sync-metadata-webserver/artist')
-                                copyfile('/tmp/shairport-sync/album', '/root/shairport-sync-metadata-webserver/album')
-                                copyfile('/tmp/shairport-sync/title', '/root/shairport-sync-metadata-webserver/title')
+                                if os.path.exists("/tmp/shairport-sync/artist") == True:
+                                        copyfile('/tmp/shairport-sync/artist', '/root/shairport-sync-metadata-webserver/artist')
+                                        copyfile('/tmp/shairport-sync/album', '/root/shairport-sync-metadata-webserver/album')
+                                        copyfile('/tmp/shairport-sync/title', '/root/shairport-sync-metadata-webserver/title')
                                 break
         else:
                 print("Music is not playing.")
