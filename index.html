@@ -15,22 +15,54 @@
 			$('#bg').foggy();
 		});
 	</script>
+	<!--
 	<script type="text/javascript">
-		$(window).load(function(){
+		$(document).ready(function(){
 			$("#artist").load("artist");
             });
-		$(window).load(function(){
+		$(document).ready(function(){
 			$("#album").load("album");
             });
-		$(window).load(function(){
+		$(document).ready(function(){
 			$("#track").load("title");
-            });
+			});
 	</script>
+	-->
 </head>
 <body>
-<p id="artist">No Artist</p>
-<p id="album">No Album</p>
-<p id="track">No Track</p>
+<p id="artist"></p>
+<p id="album"></p>
+<p id="track"></p>
 <img id="albumart" src="image_converted.jpeg"/>
+<script type="text/javascript">
+$(document).ready(function(){
+	while (artistvar == "No Artist") {
+		document.getElementById("artist").innerHTML = artistvar;
+		break;
+	}
+	while (artistvar != artistmetadata) {
+		artistvar = artistmetadata;
+		document.getElementById("artist").innerHTML = artistvar;
+	}
+
+	while (albumvar == "No Album") {
+		document.getElementById("album").innerHTML = albumvar;
+		break;
+	}
+	while (albumvar != albummetadata) {
+		albumvar = albummetadata;
+		document.getElementById("album").innerHTML = albumvar;
+	}
+
+	while (titlevar == "No Title") {
+		document.getElementById("track").innerHTML = titlevar;
+		break;
+	}
+	while (titlevar != titlemetadata) {
+		titlevar = titlemetadata;
+		document.getElementById("track").innerHTML = titlevar;
+	}
+});
+</script>
 </body>
 </html>
