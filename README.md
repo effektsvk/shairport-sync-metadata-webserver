@@ -4,12 +4,13 @@ HTML page showing metadata from shairport-sync using forked shairport-sync-metad
 ---
 
 This is (supposed to be) HTML page showing metadata from shairport-sync metadata which is then outputted as a separate file, that is possible thanks to awesome @birdslikewires.
-It is early WIP, it's basically unusable. I'm begginer and I'm trying to figure out things. I've only put this here for better copying between my NAS (where shairport is installed and used) and my PC.
+It is still WIP, but it's usable. I've only put this here for better copying between my NAS (where shairport is installed and used) and my PC.
 
 ---
 
 # Current state
-The only thing that works is album art metadata.
+- Automatic refreshing of metadata and album art :heavy_check_mark: 
+- CSS of index.html :heavy_multiplication_x: 
 
 ---
 
