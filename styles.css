@@ -1,24 +1,72 @@
-#bg {
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-	
-  /* Preserve aspet ratio */
-  min-width: 100%;
-  min-height: 100%;
-}
-
-#bg img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
-  min-width: 50%;
-  min-height: 50%;
-}
-
 #albumart {
   max-width: 400px;
-  }
+  max-height: 400px;
+  padding-right: 20%;
+
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 100%;
+  overflow: hidden;
+}
+
+#page {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+/*  align-items: center;
+  align-content: center;*/
+  max-width: 50%;
+}
+
+#metadata {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  /*align-items: center;*/
+  flex-wrap: wrap;
+  max-width: 60%;
+  padding-left: 5%
+}
+
+/*fonts and shadows*/
+
+#artist {
+  order: 2;
+  font-size: 50px;
+  font-family: "Kozuka Gothic Pr6N";
+  color: rgb(177, 177, 177);
+  line-height: 1.2;
+  text-align: left;
+  text-shadow: 0px 7px 12.09px rgba(0, 0, 0, 0.51);
+}
+
+#album {
+  order: 3;
+  font-size: 40px;
+  font-family: "Kozuka Gothic Pr6N";
+  color: rgb(157, 157, 157);
+  line-height: 1.2;
+  text-align: left;
+  text-shadow: 0px 7px 12.09px rgba(0, 0, 0, 0.51);
+}
+
+#track {
+  font-size: 100px;
+  font-family: "Kozuka Gothic Pr6N";
+  color: rgb(225, 225, 225);
+  line-height: 1.2;
+  text-align: left;
+  text-shadow: 0px 7px 12.09px rgba(0, 0, 0, 0.51);
+  order: 1;
+}
