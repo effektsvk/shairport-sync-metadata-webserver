@@ -66,10 +66,12 @@ $(document).ready(function(){
 		titlevar = titlemetadata;
 		document.getElementById("track").innerHTML = titlevar;
 	}
-	while (artistvar != artistmetadata) {
+	while (1) {
+	artistmetadata = $.ajax({type: "GET", url: "artist", async: false}).responseText;
+	if (artistmetadata != artistvar) {
 		window.locaton.reload();
-		continue;
 	}
+}
 });
 </script>
 </body>
