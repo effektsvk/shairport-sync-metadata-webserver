@@ -2,7 +2,7 @@
 import os
 import time
 from shutil import copyfile
-x = 10
+x = 1
 while True:
         if os.path.exists("/tmp/shairport-sync/image") == True:
                 copyfile('/tmp/shairport-sync/image', '/root/shairport-sync-metadata-webserver/image')
