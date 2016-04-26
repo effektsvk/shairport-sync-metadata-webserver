@@ -66,12 +66,16 @@ $(document).ready(function(){
 		titlevar = titlemetadata;
 		document.getElementById("track").innerHTML = titlevar;
 	}
-	while (1) {
-	setTimeout(function(){
+
+	function fetchArtistMetadata(){
 	artistmetadata = $.ajax({type: "GET", url: "artist", async: false}).responseText;
+
 	if (artistmetadata != artistvar) {
 		locaton.reload();
 	}
+
+	while (1) {
+	setTimeout(fetchArtistMetadata(){
 }, 2000);
 };
 };
