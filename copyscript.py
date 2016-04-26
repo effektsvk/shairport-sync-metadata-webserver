@@ -3,11 +3,14 @@ import os
 import time
 from shutil import copyfile
 x = 1
+var 
 while True:
         if os.path.exists("/tmp/shairport-sync/image") == True:
                 copyfile('/tmp/shairport-sync/image', '/root/shairport-sync-metadata-webserver/image')
+                tmpimage = os.path.getsize("/tmp/shairport-sync/image")
+                rootimage = os.path.getsize("/root/shairport-sync-metadata-webserver/image")
                 while True:
-                        if (os.path.getsize("/tmp/shairport-sync/image") == os.path.getsize("/root/shairport-sync-metadata-webserver/image")) == True:
+                        if (tmpimage == rootimage) == True:
                                 time.sleep(1)
                                 print("Now playing album art equals to the one on webserver.")
                                 x = x + 1
