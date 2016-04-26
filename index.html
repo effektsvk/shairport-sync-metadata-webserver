@@ -68,17 +68,15 @@ $(document).ready(function(){
 		document.getElementById("track").innerHTML = titlevar;
 	}
 
-	function fetchArtistMetadata(){
-	artistmetadata = $.ajax({type: "GET", url: "artist", async: false}).responseText;
+	while (true) {
+		setTimeout(fetchArtistMetadata(){ console.log("while"); }, 2000);
+	}
 
-	if (artistmetadata != artistvar) {
-		locaton.reload();
-	};
-
-	for (;;) {
-	setTimeout(fetchArtistMetadata(), 2000);
-};
+	
 });
+
+	
+
 </script>
 </body>
 </html>
