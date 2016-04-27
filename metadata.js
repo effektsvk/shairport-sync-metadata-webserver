@@ -27,19 +27,6 @@
 		}).responseText;
 	}
 
-	// function checkifchanged() {
-	
-	// 	if (titlemetadata == titlevar) {
-	// 		titlemetadata = $.ajax({type: "GET", url: "title", async: false}).responseText;
-	// 		if (titlemetadata !== titlevar) {
-	// 		location.reload();
-	// 		clearInterval(interval);
-	// 		}
-	// 	}
-	// };
-
-// while (true) {
-
 	if (doesFileExist("artist") == false) {
 		artistmetadata = "No Artist";
 	}
@@ -60,10 +47,6 @@
 	else {
 		titlemetadata = $.ajax({type: "GET", url: "title", async: false}).responseText;
 	};
-
-	// var interval = setInterval(checkifchanged, 1000);
-// }
-	
 
 	console.log(artistmetadata);
 	console.log(albummetadata);
