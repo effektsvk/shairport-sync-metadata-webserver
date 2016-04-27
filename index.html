@@ -9,6 +9,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script type="text/javascript" src="jquery.foggy.js"></script>
 	<script type="text/javascript" src="metadata.js"></script>
+	<!-- <script type="text/javascript" src="WorkerQueue.js"></script> -->
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="animate.css">
 	<script type="text/javascript">
@@ -67,6 +68,23 @@ $(document).ready(function(){
 		document.getElementById("track").innerHTML = titlevar;
 	}
 });
+
+$(function(){
+	setInterval(checkIfChanged, 1000);
+});
+
+function checkIfChanged() {
+	checkTitle();
+	console.log(titlemetadata);
+	console.log(titlevar);
+	if (titlevar !== titlemetadata) {
+		console.log("changed")
+		location.reload()
+	}
+	else {
+		console.log("no change")
+	};
+}
 </script>
 </body>
 </html>
