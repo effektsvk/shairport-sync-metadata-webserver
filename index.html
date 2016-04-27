@@ -37,7 +37,7 @@
 <p id="album"></p>
 <p id="track"></p>
 </div>
-<img id="albumart" src="image_converted.jpeg" class="animated fadeInRight"/>
+<iframe src="image.html" scrolling="no" frameborder="0" width="400px" height="400px"></iframe>
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -67,6 +67,13 @@ $(document).ready(function(){
 		titlevar = titlemetadata;
 		document.getElementById("track").innerHTML = titlevar;
 	}
+
+	var currentIFrame = 1;
+
+	$('iframe').on('load',function(){
+    $(this).show()
+    $('#iframe'+(currentIFrame=1-currentIFrame)).hide().delay(1000).reload();
+})
 });
 
 $(function(){

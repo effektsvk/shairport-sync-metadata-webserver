@@ -27,6 +27,13 @@
 		}).responseText;
 	}
 
+	var currentIFrame = 1;
+
+	$('iframe').on('load',function(){
+    $(this).show()
+    $('#iframe'+(currentIFrame=1-currentIFrame)).hide().delay(1000).reload();
+})
+
 	if (doesFileExist("artist") == false) {
 		artistmetadata = "No Artist";
 	}
