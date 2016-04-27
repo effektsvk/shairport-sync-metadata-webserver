@@ -37,7 +37,7 @@
 <p id="album"></p>
 <p id="track"></p>
 </div>
-<img id="albumart" src="image_converted.jpeg" class="animated fadeInRight"/>
+<iframe src="image.html" scrolling="no" frameborder="0"></iframe>
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -70,7 +70,7 @@ $(document).ready(function(){
 });
 
 $(function(){
-	setInterval(checkIfChanged, 1000);
+	setInterval(checkIfChanged, 5000);
 });
 
 function checkIfChanged() {
