@@ -5,15 +5,6 @@
 	var albummetadata;
 	var titlemetadata;
 
-	function fetchArtistMetadata(){
-	artistmetadata = $.ajax({type: "GET", url: "artist", async: false}).responseText;
-	console.log(artistmetadata);
-	console.log(artistvar);
-	if (artistmetadata != artistvar) {
-		locaton.reload();
-		console.log("hi");
-	}
-
 	function doesFileExist(urlToFile){
     var xhr = new XMLHttpRequest();
     xhr.open('HEAD', urlToFile, false);

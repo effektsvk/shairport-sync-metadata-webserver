@@ -3,11 +3,10 @@
 <head>
 	<title>Page</title>
 	<meta charset="utf-8">
-	<!-- <meta http-equiv="refresh" content = "3"> -->
+	<meta http-equiv="refresh" content = "3">
 	<meta http-equiv="Page-Enter" content="blendTrans(Duration=1.0)">
 	<meta http-equiv="Page-Exit" content="blendTrans(Duration=1.0)">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script type="text/javascript" src="live.js"></script>
 	<script type="text/javascript" src="jquery.foggy.js"></script>
 	<script type="text/javascript" src="metadata.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles.css">
@@ -67,16 +66,7 @@ $(document).ready(function(){
 		titlevar = titlemetadata;
 		document.getElementById("track").innerHTML = titlevar;
 	}
-
-	while (true) {
-		setTimeout(fetchArtistMetadata(){ console.log("while"); }, 2000);
-	}
-
-	
 });
-
-	
-
 </script>
 </body>
 </html>
