@@ -17,6 +17,8 @@
     }
 }
 
+// while (true) {
+
 	if (doesFileExist("artist") == false) {
 		artistmetadata = "No Artist";
 	}
@@ -37,9 +39,7 @@
 	else {
 		titlemetadata = $.ajax({type: "GET", url: "title", async: false}).responseText;
 	}
-
-
-
+// }
 	console.log(artistmetadata);
 	console.log(albummetadata);
 	console.log(titlemetadata);
