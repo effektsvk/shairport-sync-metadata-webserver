@@ -48,6 +48,13 @@
 		titlemetadata = $.ajax({type: "GET", url: "title", async: false}).responseText;
 	};
 
+	var currentIFrame = 1;
+
+	$('iframe').on('load',function(){
+    $(this).show()
+    $('#iframe'+(currentIFrame=1-currentIFrame)).hide().delay(1000).reload();
+})
+
 	console.log(artistmetadata);
 	console.log(albummetadata);
 	console.log(titlemetadata);
